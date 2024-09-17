@@ -23,9 +23,13 @@
     font-family: roboto;
     font-weight: 200;
     margin: 10px;
+    text-decoration: none;
+    color:white;
 }
 .navbar-logout-container{
     justify-content:flex-end;
+    text-decoration: none;
+    color:white;
 }
 
 

@@ -1,17 +1,19 @@
 import './navbar.css'
 
 function Navbar(){
+    function removeJwt(){
+        localStorage.removeItem('JWT');
+    }
     return(
         <>
         <div className="navbar-container">
             <div className="navbar-item-container">
-            <div className="navbar-item">Home</div>
-            <div className="navbar-item">Dashboard</div>
-            <div className="navbar-item">Home</div>
-            <div className="navbar-item">Dashboard</div>
+            <a href='/' className="navbar-item">Home</a>
+            <a href='/add-employ' className="navbar-item">Add-Employs</a>
+            <a href='/employs-list' className="navbar-item">Employs List</a>
             </div>
             <div className="navbar-logout-container">
-                <div className="navbar-logout-item" >logout</div>
+                <a href='/login' onClick={removeJwt} className="navbar-logout-item" >logout</a>
             </div>
 
         </div>
