@@ -13,9 +13,8 @@ function Navbar(){
             <a href='/employs-list' className="navbar-item">Employs List</a>
             </div>
             <div className="navbar-logout-container">
-                <a href='/login' onClick={removeJwt} className="navbar-logout-item" >logout</a>
+                <a href='' onClick={removeJwt} className="navbar-logout-item" >logout</a>
             </div>
-
         </div>
         </>
     )

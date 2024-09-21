@@ -1,6 +1,4 @@
 
-
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -59,7 +57,7 @@ const Employ = () => {
   const handleSave = async () => {
     try {
         let token=localStorage.getItem('JWT')
-      const response = await axios.put(`http://localhost:8000/${editingEmployee._id}`, formData,{ headers:{
+      await axios.put(`http://localhost:8000/${editingEmployee._id}`, formData,{ headers:{
         'Authorization':`Bearer ${token}`
     }});
       
